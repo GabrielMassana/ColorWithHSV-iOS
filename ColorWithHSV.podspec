@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ColorWithHSV"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Swift Extension to convert HSV colour values into UIColor Objects."
 
   s.homepage     = "https://github.com/GabrielMassana"
