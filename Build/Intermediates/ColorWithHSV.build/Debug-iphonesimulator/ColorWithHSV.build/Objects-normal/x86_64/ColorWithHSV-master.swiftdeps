@@ -1,7 +1,0 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "d954dfe092bac557cedfeaa669a7238b"
-build_time: [512952528, 706572000]
-inputs:
-  "/Users/Gabriel/Desktop/MyFrameworks/ColorWithHSV-iOS/ColorWithHSV/Example/ViewController.swift": [512952528, 0]
-  "/Users/Gabriel/Desktop/MyFrameworks/ColorWithHSV-iOS/ColorWithHSV/Example/AppDelegate.swift": [512951452, 0]
-  "/Users/Gabriel/Desktop/MyFrameworks/ColorWithHSV-iOS/ColorWithHSV-iOS/UIColor+HSV.swift": [512952300, 0]
