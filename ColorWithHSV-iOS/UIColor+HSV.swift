@@ -26,11 +26,11 @@ public extension UIColor {
     @objc(hsv_colorWithHue:saturation:value:)
     public class func colorWithHSV(hue hue: CGFloat, saturation: CGFloat, value: CGFloat) -> UIColor? {
         
-        var r: CGFloat = 0
-        var g: CGFloat = 0
-        var b: CGFloat = 0
+        var r: CGFloat = 0.0
+        var g: CGFloat = 0.0
+        var b: CGFloat = 0.0
         
-        guard hue <= 360 && hue >= 0.0 else { return nil }
+        guard hue <= 360.0 && hue >= 0.0 else { return nil }
         guard saturation <= 1.0 && saturation >= 0.0 else { return nil }
         guard value <= 1.0 && value >= 0.0 else { return nil }
         

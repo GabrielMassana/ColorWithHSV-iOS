@@ -24,14 +24,14 @@ class colorWithHSVTests: XCTestCase {
     
     //MARK: - Valid
     
-    func test_colorWithHex_newObjectReturned_minimum() {
+    func test_colorWithHSV_newObjectReturned_minimum() {
         
         let color = UIColor.colorWithHSV(hue: 0.0, saturation: 0.0, value: 0.0)
         
         XCTAssertNotNil(color, "A valid Color object wasn't created");
     }
     
-    func test_colorWithHex_newObjectReturned_maximum() {
+    func test_colorWithHSV_newObjectReturned_maximum() {
         
         let color = UIColor.colorWithHSV(hue: 360.0, saturation: 1.0, value: 1.0)
         
@@ -40,42 +40,42 @@ class colorWithHSVTests: XCTestCase {
     
     //MARK: - NoValid
     
-    func test_colorWithHex_outOfRangeHue_over() {
+    func test_colorWithHSV_outOfRangeHue_over() {
         
         let color = UIColor.colorWithHSV(hue: 361.0, saturation: 0.5, value: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeHue_under() {
+    func test_colorWithHSV_outOfRangeHue_under() {
         
         let color = UIColor.colorWithHSV(hue: -1.0, saturation: 0.5, value: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeSaturation_over() {
+    func test_colorWithHSV_outOfRangeSaturation_over() {
         
         let color = UIColor.colorWithHSV(hue: 180.0, saturation: 1.1, value: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeSaturation_under() {
+    func test_colorWithHSV_outOfRangeSaturation_under() {
         
         let color = UIColor.colorWithHSV(hue: 180.0, saturation: -0.1, value: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangevalue_over() {
+    func test_colorWithHSV_outOfRangevalue_over() {
         
         let color = UIColor.colorWithHSV(hue: 180.0, saturation: 0.5, value: 1.1)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangevalue_under() {
+    func test_colorWithHSV_outOfRangevalue_under() {
         
         let color = UIColor.colorWithHSV(hue: 180.0, saturation: 0.5, value: -0.1)
         
@@ -84,21 +84,21 @@ class colorWithHSVTests: XCTestCase {
     
     //MARK: - SpecificColor
     
-    func test_colorWithHex_red() {
+    func test_colorWithHSV_red() {
         
         let redColor = UIColor.colorWithHSV(hue: 0.0, saturation: 1.0, value: 1.0)
         
         XCTAssertEqual(redColor, UIColor.redColor(), "A red Color object wasn't created");
     }
     
-    func test_colorWithHex_green() {
+    func test_colorWithHSV_green() {
         
         let greenColor = UIColor.colorWithHSV(hue: 120.0, saturation: 1.0, value: 1.0)
         
         XCTAssertEqual(greenColor, UIColor.greenColor(), "A green Color object wasn't created");
     }
     
-    func test_colorWithHex_blue() {
+    func test_colorWithHSV_blue() {
         
         let blueColor = UIColor.colorWithHSV(hue: 240.0, saturation: 1.0, value: 1.0)
         
