@@ -1,18 +1,18 @@
-# ColorWithHSL-iOS
+# ColorWithHSV-iOS
 
-[![Version](https://img.shields.io/cocoapods/v/ColorWithHSL.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSL)
-[![License](https://img.shields.io/cocoapods/l/ColorWithHSL.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSL)
-[![Platform](https://img.shields.io/cocoapods/p/ColorWithHSL.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSL)
-[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/ColorWithHSL.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSL)
-[![Build Status](https://img.shields.io/travis/GabrielMassana/ColorWithHSL-iOS/master.svg?style=flat-square)](https://travis-ci.org/GabrielMassana/ColorWithHSL-iOS)
+[![Version](https://img.shields.io/cocoapods/v/ColorWithHSV.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSV)
+[![License](https://img.shields.io/cocoapods/l/ColorWithHSV.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSV)
+[![Platform](https://img.shields.io/cocoapods/p/ColorWithHSV.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSV)
+[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/ColorWithHSV.svg?style=flat-square)](http://cocoapods.org/pods/ColorWithHSL)
+[![Build Status](https://img.shields.io/travis/GabrielMassana/ColorWithHSV-iOS/master.svg?style=flat-square)](https://travis-ci.org/GabrielMassana/ColorWithHSV-iOS)
 
 ##   What is it?
 
-Swift Extension to convert a HSL colour values into a UIColor Objects.
+Swift Extension to convert a HSV colour values into a UIColor Objects.
 
-HSL stands for hue, saturation, and lightness, and is also often called HLS.
+HSV stands for hue, saturation, and value, and is also often called HSB (B for brightness). 
 
-Formula from [Wikipedia](https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSL).
+Formula from [Wikipedia](https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSV).
 
 ## Installation
 
@@ -33,28 +33,28 @@ $ pod install
 
 #### Old school
 
-Drag into your project the folder `/ColorWithHSL-iOS`. That's all.
+Drag into your project the folder `/ColorWithHSV-iOS`. That's all.
 
 ## Example Swift
 
 ```swift
-        let black: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 0, lightness: 0)
-        let white: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 0, lightness: 1)
-        let red: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 1, lightness: 0.5)
-        let green: UIColor = UIColor.colorWithHSL(hue: 120, saturation: 1, lightness: 0.5)
-        let blue: UIColor = UIColor.colorWithHSL(hue: 240, saturation: 1, lightness: 0.5)
+        let black: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 0, value: 0)
+        let white: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 0, value: 1)
+        let red: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 1, value: 0.5)
+        let green: UIColor = UIColor.colorWithHSL(hue: 120, saturation: 1, value: 0.5)
+        let blue: UIColor = UIColor.colorWithHSL(hue: 240, saturation: 1, value: 0.5)
 ```
 ## Example Objective-C
 
 ```objc
-#import "ColorWithHSL-Swift.h"
+#import "ColorWithHSV-Swift.h"
 
 ...
-    UIColor *black = [UIColor hsl_colorWithHue:0 saturation:0 lightness:0];
-    UIColor *white = [UIColor hsl_colorWithHue:0 saturation:0 lightness:1];
-    UIColor *red = [UIColor hsl_colorWithHue:0 saturation:1 lightness:0.5];
-    UIColor *green = [UIColor hsl_colorWithHue:120 saturation:1 lightness:0.5];
-    UIColor *blue = [UIColor hsl_colorWithHue:240 saturation:1 lightness:0.5];
+    UIColor *black = [UIColor hsv_colorWithHue:0 saturation:0 value:0];
+    UIColor *white = [UIColor hsv_colorWithHue:0 saturation:0 value:1];
+    UIColor *red = [UIColor hsv_colorWithHue:0 saturation:1 value:0.5];
+    UIColor *green = [UIColor hsv_colorWithHue:120 saturation:1 value:0.5];
+    UIColor *blue = [UIColor hsv_colorWithHue:240 saturation:1 value:0.5];
     
         
 ```
