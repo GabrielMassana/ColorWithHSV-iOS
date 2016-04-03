@@ -5,7 +5,7 @@
 //  Created by GabrielMassana on 03/04/2016.
 //  Copyright © 2016 GabrielMassana. All rights reserved.
 //
-//  https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSL
+//  Formula: https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSL
 //
 
 import UIKit
