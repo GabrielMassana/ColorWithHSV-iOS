@@ -1,4 +1,4 @@
-#### 1.0.1
+#### 1.0.2
 
  - First release
  - Extension will create a UIColor object based on given HSV values.
